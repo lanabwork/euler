@@ -1,0 +1,70 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  min-width: 320px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  padding: 16px;
+  width: 100%;
+  margin: 0 auto;
+  @include breakpoint(lg) {
+    width: 1040px;
+  }
+}
+
+.el-col {
+  margin-bottom: 20px;
+
+  &--justify-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--flex-row {
+    display: flex;
+  }
+  &--align-end {
+   align-items: flex-end;
+  }
+}
+.el-card {
+  height: 200px;
+  border-radius: 0.8em;
+}
+
+[class^="el-icon-"],
+[class*=" el-icon-"]{
+  cursor: pointer;
+}
+
+input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+
+  &:hover,
+  &:focus {
+    -moz-appearance: number-input;
+  }
+}
+
+.disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}

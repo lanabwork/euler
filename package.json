@@ -1,0 +1,42 @@
+{
+  "name": "euler",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "lanabwork <lanab.work@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/svg-sprite": "^0.4.12",
+    "element-ui": "^2.13.2",
+    "lodash": "^4.17.20",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^10.0.2",
+    "vue-the-mask": "^0.11.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@vue/test-utils": "^1.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^26.3.0",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "jest": "^26.4.2",
+    "jest-transform-stub": "^2.0.0",
+    "node-sass": "^4.14.1",
+    "vue-jest": "^3.0.7"
+  }
+}
